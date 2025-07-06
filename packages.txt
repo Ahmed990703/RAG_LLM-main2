@@ -1,0 +1,10 @@
+libopenblas-dev
+libomp-dev
+swig
+g++
+build-essential
+cmake
+make
+python3-dev
+rustc
+cargo
