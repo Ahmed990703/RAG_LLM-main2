@@ -1,10 +1,10 @@
 import streamlit as st
-import RagLlm as rag
+#import RagLlm as rag
 import tempfile
 import os
 import sys
-from rag.ocr_rag_system import OCR_RAG_System
-ocr_system = rag.OCR_RAG_System(gemini_api_key='AIzaSyAFLqDuBXJovJCXseE-4N3OnyelHorgFIA',knowledge_base_path='knowledge_base.pkl')
+from RagLlm.ocr_rag_system import OCR_RAG_System
+ocr_system = OCR_RAG_System(gemini_api_key='AIzaSyAFLqDuBXJovJCXseE-4N3OnyelHorgFIA',knowledge_base_path='knowledge_base.pkl')
 #image_path = upload_file()
 #response = ocr_system.process_image_with_rag(image_path, True)
 
