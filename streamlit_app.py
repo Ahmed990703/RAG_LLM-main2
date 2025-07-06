@@ -3,10 +3,7 @@ import RagLlm as rag
 import tempfile
 import os
 import sys
-if sys.version_info >= (3, 13):
-    raise RuntimeError("Python 3.13 is not supported yet. Please use Python 3.10.")
-
-ocr_system = rag.OCR_RAG_System(gemini_api_key='AIzaSyAFLqDuBXJovJCXseE-4N3OnyelHorgFIA',knowledge_base_path='knowledge_base.pkl')
+ocr_system = rag.ocr_rag_system(gemini_api_key='AIzaSyAFLqDuBXJovJCXseE-4N3OnyelHorgFIA',knowledge_base_path='knowledge_base.pkl')
 #image_path = upload_file()
 #response = ocr_system.process_image_with_rag(image_path, True)
 
